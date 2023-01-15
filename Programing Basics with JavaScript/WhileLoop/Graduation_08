@@ -1,0 +1,30 @@
+function graduation(input) {
+
+    let name = input.shift();
+        let poorGrades = 0; //loshi ocenki
+        let goodGradesCounter = 0; // dobri ocenki
+        let gradeCounter = 1; // broi v koi klas e
+        let allGrades = 0;
+        while (goodGradesCounter < 12) {
+            if (poorGrades == 2) {
+                break;
+            }
+            let currentGrade = Number(input.shift());
+
+            if (currentGrade < 4) {
+                poorGrades++;
+                continue;
+            }
+            goodGradesCounter++;
+            allGrades += currentGrade;
+            gradeCounter++;
+        }
+
+        if (gradeCounter >= 12) {
+          
+            console.log(`${name} graduated. Average grade: ${(allGrades / goodGradesCounter).toFixed(2)}`)
+        } else {
+
+            console.log(`${name} has been excluded at ${gradeCounter} grade`)
+    }
+}
