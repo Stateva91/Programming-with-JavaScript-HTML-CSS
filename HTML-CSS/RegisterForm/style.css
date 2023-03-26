@@ -1,0 +1,101 @@
+:root{
+    --background-url: url(images/background.png);
+    --form-background-url:url(images/form-background.png);
+    --shadow: #888888;
+    --btn-color:#ae3c33;
+    --border-color: #cccc; 
+
+}
+
+
+body{
+    margin: 0;
+    background-image: var(--background-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+*,
+*::before,
+*::after {
+    font-family: "Mulish", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+
+    background-image: var(--form-background-url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    padding: 5%;
+    box-shadow: 20px 15px 15px var(--shadow);
+    border-radius: 20px;
+   
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+.field {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+
+button {
+    background-color: var(--btn-color);
+    color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+label {
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.halfCol > .inputGroup {
+    flex-basis: 50%;
+    margin-right: 0;
+}
+
+.halfCol {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    margin-left: 0;
+}
+.halfCol,
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+}
+.halfCol{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    flex-direction: column;
+}
+.registerNow {
+    margin: 2%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+h1{
+    text-align: center;
+}
