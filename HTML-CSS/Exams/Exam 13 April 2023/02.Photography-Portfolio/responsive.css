@@ -1,0 +1,29 @@
+@media screen and (max-width:600px) {
+    .navigation-nav {
+        display: none;
+    }
+    .home-text{
+        display: none;
+    }
+    .home-tab-selector-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .portofolio-card-image-container {
+        min-width: 500px;
+    }
+    .home-image-container{
+        display: none;
+    }
+    .max-content-container .home-top-part .home-links-container{
+        display: flex;
+        flex-direction:column;
+        
+    }
+    .home-top-part{
+        display: flex;
+        flex-direction: column;
+    }
+}

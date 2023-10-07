@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+body{
+   background-image: url(./image/background.jpg);
+    overflow: hidden; 
+    font-family: Inter;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.price-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 50px;
+    width: 1300px;
+    align-items: center;
+   
+
+}
+.items:hover{
+    transform: scale(1.05);
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 85%;
+    padding: 30px;
+    gap: 10px;
+}
+
+strong{
+    font-size: 56px;
+    font-style: bold;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+    padding: 0.5px;
+
+}
+ul li{
+    padding: 3px;
+}
+ul li i{
+    padding-right: 3px;
+}
