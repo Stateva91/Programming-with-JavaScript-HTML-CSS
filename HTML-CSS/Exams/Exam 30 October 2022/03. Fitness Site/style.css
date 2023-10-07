@@ -1,0 +1,138 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css";
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif");
+
+body{
+    font-family: "PT Sans", "PT Serif";
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.icon-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    padding: 20px 10px;
+    margin: 0px 0px;
+}
+.items-header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./image/fitness-main.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 600px;
+    color: white;
+    text-align: center;
+    
+}
+.item-header{
+    padding-top: 100px;
+}
+.item-header h1 {
+    font-size: 56px;
+    letter-spacing: 14px;
+}
+.icons{
+    letter-spacing: 10px;
+    padding-right: 10px;
+}
+.nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    padding-right: 20px;
+    
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    gap: 100px;
+    list-style: none;
+    text-decoration: none;
+    padding-right: 10px;
+    
+}
+.nav ul a {
+    text-decoration: none;
+    color: white;
+}
+.btn-header{
+    background-color: red;
+    padding: 10px 15px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.welcome{
+    text-align: center;
+    width: 100%;
+   
+}
+.divider {
+    height: 4px;
+    background-color: red;
+    margin-bottom: 1rem;
+    margin-right: 900px;
+    margin-left: 900px;
+}
+.welcome h1{
+    font-size: 48px;
+    
+}
+.items{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+.item{
+    width: 30%;
+    margin: 10px 40px;
+    height: 250px;
+
+}
+.item i{
+    font-size: 52px;
+}
+.item h2{
+    color: red;
+}
+.item p{
+    font-size: 24px;
+}
+.coaches{
+    text-align: center;
+    background-color: antiquewhite;
+    height: 600px;
+    padding-top: 10px;
+}
+.items-coaches{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+    
+}
+.item-coaches{
+    width: 30%;
+    margin: 10px 40px;
+    height: 250px;
+}
+.item-coaches img{
+    width: 450px;
+}
+
+.footer{
+    text-align: center;
+    background-color: red;
+    padding: 20px 10px;
+    font-size: 24px;
+}
