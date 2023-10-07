@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        
+    }
+    header nav{
+        display: block;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        
+    }
+    .header-title {
+        padding: 2em 0;
+    }
+    .header-title h1{
+        font-size: 30px;
+    }
+    .team-description-wrapper{
+        width: 100%;
+    }
+    .team-description ul{
+       flex-wrap: wrap;
+       gap: 30px;
+    }
+    .choose-us ul{
+        display: block;
+    }
+    .blog-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-news ul .item{
+        padding-bottom: 30px;
+    }
+}
