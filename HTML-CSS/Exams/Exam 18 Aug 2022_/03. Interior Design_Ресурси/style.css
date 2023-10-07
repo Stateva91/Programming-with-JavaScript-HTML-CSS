@@ -1,0 +1,138 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+body{
+        font-family: 'Roboto';
+    
+}
+
+.interior{
+    background-image: url(./image/image.jpg);
+    width: 80%;
+    height: 1150px;
+    margin: auto;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+}
+.item1{
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 60px 10px 80px 50px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 2px 2px 10px 3px #888888; ;
+}
+.item1 h1{
+    font-size: 48px;
+    font-family: "Abril Fatface";
+    margin-top: 5px;
+}
+.item1 p{
+    font-size: 24px;
+   text-transform: uppercase;
+}
+.item2{
+    width: 350px;
+    height: 350px;
+    color: white;
+    margin-right: 35px;
+    margin-top: 350px;
+    font-size: 16px;
+    background-color: aliceblue;
+    font-size: 18px;
+    text-align: right;
+    padding: 20px;
+    background-image: linear-gradient(to right, #9b9189, #c9c7c6);
+}
+.item2 p{
+    font-size: 24px;
+    font-weight: 100;
+}
+.item2 i{
+    font-size: 36px;
+}
+.items{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+.services-contact{
+    background-color: rgb(242 240 243);
+    width: 65%;
+    padding: 20px 100px;
+}
+.services h1{
+    font-family: "Abril Fatface";
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.services i{
+    padding-right: 10px;
+}
+.services p{
+    font-size: 22px;
+}
+strong{
+    text-transform: uppercase;
+}
+.counter{
+    background-color: rgb(186 177 173);
+    width: 35%;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.counter h2{
+    font-size: 80px;
+    color: white;
+    /* font-family: 'Abril Fatface'; */
+    font-weight: 100;
+    margin-bottom: -20px;
+   
+}
+.adress{
+    display: flex;
+   flex-direction: column;
+}
+.adress p{
+    font-size: 18px;
+}
+.btn-enter{
+    background-color: #9b9189;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.btn-get{
+    background-color: #67784d;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.divider {
+    height: 2px;
+    background-color:gray;
+    margin-bottom: 1rem;
+}
+.divider-white{
+    height: 2px;
+    background-color:white;
+    margin-bottom: 1rem; 
+    text-align: left;
+    width: 70%;
+}
