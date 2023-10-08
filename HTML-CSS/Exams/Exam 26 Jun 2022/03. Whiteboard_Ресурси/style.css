@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Montserrat:wght@100;200;300;400;500;600;700&family=PT+Sans:wght@400;700&family=Poppins:wght@100;200;300;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css";
+
+body{
+    font-family: "PT Sans";
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),  url(./image/computer-main.jpg);
+    background-position: center;
+    height: 800px;
+    background-size: cover;
+    font-size: 24px;
+}
+.first-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 150px;
+    color: white;
+    font-size: 36px;
+}
+
+.second-header{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 3px black;
+   
+}
+.second-header h1{
+    
+    font-size: 72px;
+    text-shadow: 1px 3px black;
+}
+.second-header p{
+    font-size: 32px;
+    margin: 10px 600px;
+}
+.btn-header{
+  background-color: rgb(0 208 142);
+  color: white;
+  padding: 10px 25px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  margin: 40px 5px;
+}
+
+.tablet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.tablet-right{
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-left: 70px;
+}
+.tablet img{
+    width: 100%;
+}
+.tablet-right p{
+   
+    font-size: 30px;
+}
+.tablet-right h2{
+   font-size: 48px;
+}
+
+.tablet-ul{
+    list-style: none;
+    font-size: 26px;
+}
+
+i{
+    color: #00d08e;
+    padding-right: 20px;
+    
+}
+.tablet-ul li {
+    padding-bottom: 30px;
+}
+.icon-img{
+    width: 150px;
+}
+
+.perfect{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.perfect .img-coffe{
+    width: 100%;
+}
+.perfect-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 40px 15px;
+    color: #00d08e;;
+}
+.perfect-section{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.question-items{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 45px;
+    margin: 10px 95px;
+    font-size: 22px;
+
+}
+.item{
+    margin: 2px 45px;
+}
+.question-section{
+    background-color: rgb(178 241 221);
+    text-align: center;
+    height: 750px;
+}
+.question-h1{
+    padding-top: 10px;
+    font-size: 28px;
+}
+.email{
+    font-size: 16px;
+}
