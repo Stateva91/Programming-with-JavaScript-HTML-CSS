@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    flex-direction: column;
+
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.slider{
+    background-image: url(./images/header-bg.png);
+    background-position: bottom;
+    height: 700px;
+    
+}
+.img-dog{
+    width: 50%;
+    position: absolute;
+    margin: 45px 605px;
+}
+.item{
+    padding: 105px 400px;
+    width: 350px;
+    color: white;
+}
+.item h1{
+    font-size: 72px;
+   font-weight: 100;
+}
+.btn-contact{
+    padding: 15px 40px;
+    background-color: white;
+    color: orange;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    border: none;
+}
+.dogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px;
+}
+.dog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: 100px;
+    text-align: center;
+    gap: 20px;
+}
+.dog-item{
+    height: 325px;
+    width: 60%;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 30px 40px;
+}
+.img-pet{
+    background-image: url(./images/service-bg.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    padding: 40px 10px;
+}
+.cat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+.contact{
+    background-image: url(./images/cats-bg.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    padding: 100px 600px;
+}
+.contacts{
+    display: flex;
+    gap: 20px;
+}
+.contact p{
+    text-align: center;
+}
+.btn-contact .btn-why{
+    margin: 10px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    margin: auto;
+    padding: 80px;
+}
+.footer-logo{
+    padding: 15px 10px;
+}
+.footer-item{
+    padding: 15px 0px;
+}
