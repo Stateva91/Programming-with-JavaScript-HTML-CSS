@@ -12,12 +12,12 @@ function arrayRotation(array, rotations){
 
 arrayRotation([51, 47, 32, 61, 21], 2);
 
-function arrayRotation(array, rotations){
+// function arrayRotation(array, rotations){
 
-   let arr=[51, 47, 32, 61, 21];
+//    let arr=[51, 47, 32, 61, 21];
    
-   let secondArr=arr.slice(0);
+//    let secondArr=arr.slice(0);
 
- }
+//  }
  
  
