@@ -1,5 +1,5 @@
 function solve() {
-  let text=document.querySelector('#text').value;
+  let text=document.querySelector('#text').value.toLowerCase();
   let convention=document.querySelector('#naming-convention').value;
   let result=document.querySelector('#result');
 
