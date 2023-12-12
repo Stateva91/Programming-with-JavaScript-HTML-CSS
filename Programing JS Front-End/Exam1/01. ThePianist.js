@@ -43,7 +43,7 @@ function pianist (input){
         delete piecesCollection[piece];
         console.log(`Successfully removed ${piece}!`);
      }else {
-        console.log(`Invalid operation! ${piece} does not exist in the collection`);
+        console.log(`Invalid operation! ${piece} does not exist in the collection.`);
      }
   }
 
