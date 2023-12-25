@@ -1,110 +1,91 @@
-window.addEventListener("load", solve);
-
 function solve() {
+ 
+  const placeTx = document.getElementById('place');
+  const actionTx = document.getElementById('action');
+  const personTx = document.getElementById('person');
+  
+  const addButton = document.getElementById('add-btn');
+  const taskList = document.getElementById('task-list');
+  const doneList = document.getElementById('done-list');
 
-    const taskListElement=document.getElementById('task-list');
-    const doneListElement=document.getElementById('done-list');
-    const placeInputElement= document.getElementById('place');
-    const actionInputElement= document.getElementById('action');
-    const personInputElement= document.getElementById('person');
-    const addButtonElement= document.getElementById('add-btn');
-    
-    const deleteBtn=document.querySelector('.delete');
-    
-  
-    addButtonElement.addEventListener('click', (e)=>{
-      e.preventDefault();
-    
-      if(!placeInputElement.value  || !actionInputElement.value || !personInputElement.value){
-        return;
-      }
-      const liElement=document.createElement('li');
-      liElement.className='clean-task';
-  
-        const articleElement=document.createElement('article');
-  
-       
-        const placeParagraphElement=document.createElement('p');
-        placeParagraphElement.textContent=`Place:${placeInputElement.value}`;
-  
-        const actionParagraphElement=document.createElement('p');
-        actionParagraphElement.textContent=`Action:${actionInputElement.value}`;
-  
-        const personParagraphElement=document.createElement('p');
-        personParagraphElement.textContent=`Person:${personInputElement.value}`;
-  
-        const editButtonElement=document.createElement('button');
-        editButtonElement.classList.add('buttons');
-        editButtonElement.classList.add('edit');
-        editButtonElement.textContent='edit';
-  
-        const doneButtonElement=document.createElement('button');
-        doneButtonElement.classList.add('buttons');
-        doneButtonElement.classList.add('done');
-        doneButtonElement.textContent='done';
-
-        const deleteButtonElement=document.createElement('button');
-        deleteButtonElement.classList.add('delete');
-        deleteButtonElement.textContent='delete';
-        deleteButtonElement.onclick = function() {
-            liElement.remove();
-          }
-
-
-  
-  
-        articleElement.appendChild(placeParagraphElement);
-        articleElement.appendChild(actionParagraphElement);
-        articleElement.appendChild(personParagraphElement);
-  
-        liElement.appendChild(articleElement);
-        liElement.appendChild(editButtonElement);
-        liElement.appendChild(doneButtonElement);
-       // liElement.appendChild(deleteButtonElement)
-  
-        
-      taskListElement.appendChild(liElement);
-      clearForm();
-      addButtonElement.setAttribute('disabled', true);
+  addButton.addEventListener('click', (e) => {
       
-  
-      editButtonElement.addEventListener('click', (e)=>{
-        
-        const placeName= taskListElement.querySelector('p').textContent;
-        const paragraphElements= taskListElement.querySelectorAll('article p');
-        
-        const [actionPElement, personPElement]=Array.from(paragraphElements);
-       
-        placeInputElement.value= placeName;
-        actionInputElement.value=actionPElement.textContent.split(':')[1];
-        personInputElement.value=personPElement.textContent.split(':')[1];
-        //deleteBtn.addEventListener('click', onDelete);
-        
-        taskListElement.innerHTML='';
-       
-        addButtonElement.removeAttribute('disabled');
-      })
-      doneButtonElement.addEventListener('click', ()=>{
-        
-         editButtonElement.remove();
-         doneButtonElement.remove();
-        
-        
-     doneListElement.appendChild(liElement);
-     liElement.appendChild(deleteButtonElement)
-    
-  
-         taskListElement.innerHTML='';
-        
-         addButtonElement.removeAttribute('disabled');
-      })
-    });
-  
-      function clearForm(){
-      placeInputElement.value='';
-      actionInputElement.value='';
-      personInputElement.value='';
-      }
       
-  
-     }
+      const place = placeTx.value;
+      const action = actionTx.value;
+      const person = personTx.value;
+
+      if (place === '' || action === '' || person === '') {
+          return;
+      }
+
+      const placeP = document.createElement('p');
+      placeP.textContent = `Place:${place}`;
+
+      const actionP = document.createElement('p');
+      actionP.textContent = `Action:${action}`;
+
+      const personP = document.createElement('p');
+      personP.textContent = `Person:${person}`;
+
+      const articleElement = document.createElement('article');
+      articleElement.appendChild(placeP);
+      articleElement.appendChild(actionP);
+      articleElement.appendChild(personP);
+
+
+      const buttonElement = document.createElement('button');
+      
+      const buttonEdit = buttonElement.cloneNode();
+      buttonEdit.classList.add('edit');
+      buttonEdit.textContent = 'Edit';
+
+      const buttonDone = buttonElement.cloneNode();
+      buttonDone.classList.add('done');
+      buttonDone.textContent = 'Done';    
+
+      const buttonsDiv = document.createElement('div');
+      buttonsDiv.classList.add('buttons');
+
+      buttonsDiv.appendChild (buttonEdit);
+      buttonsDiv.appendChild (buttonDone)
+      
+      const listTaskItem = document.createElement('li');
+      listTaskItem.className = 'clean-task';
+      listTaskItem.appendChild(articleElement);
+      listTaskItem.appendChild(buttonsDiv);
+      
+      taskList.appendChild(listTaskItem);
+      
+      placeTx.value = '';
+      actionTx.value = '';
+      personTx.value = '';
+      addButton.disabled = true;
+
+      buttonEdit.addEventListener('click', (e) => {
+          placeTx.value = place;
+          actionTx.value = action;
+          personTx.value = person;
+
+          listTaskItem.remove();
+          addButton.disabled = false;
+      });
+
+      buttonDone.addEventListener('click', (e) => {
+          
+          doneList.appendChild(listTaskItem);
+          buttonsDiv.remove();
+          const deleteBtn = document.createElement ('button');
+          deleteBtn.className = 'delete';
+          deleteBtn.textContent = 'Delete'; 
+          listTaskItem.appendChild (deleteBtn);
+          addButton.disabled = false;
+          
+          deleteBtn.addEventListener('click', (e) => {
+              listTaskItem.remove();
+          });
+
+      });
+  });
+
+}
